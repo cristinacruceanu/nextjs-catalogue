@@ -10,11 +10,11 @@ const Navbar = async () => {
       <nav className="flex justify-between items-center">
         <Link href="/">
           <div className="logo flex justify-between items-center">
-            <Image src="/logo.png" alt="logo" width={30} height={30} />
-            <p className="ml-3 text-sm"> BooksCatalogue</p>
+            <Image src="/logo.png" alt="logo" width={40} height={40} />
+            <p className="ml-1 font-normal text-sm"> BooksCatalogue</p>
           </div>
         </Link>
-        <div className="flex items-center gap-5 text-black">
+        <div className="flex items-center gap-5 text-black font-normal text-xs">
           {session && session?.user ? (
             <>
               <Link href="/book/create">
